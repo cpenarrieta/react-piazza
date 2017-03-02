@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class NoMatch extends Component {
+  componentDidMount() {
+    document.title = "Piazza - 404";
+  }
+
   render() {
     return (
       <div className="invalid-url">

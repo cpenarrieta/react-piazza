@@ -4,6 +4,10 @@ import './App.css';
 import { browserHistory } from 'react-router';
 
 class App extends Component {
+  componentDidMount() {
+    document.title = "Piazza - Login";
+  }
+
   constructor(props) {
     super(props);
     this.state = { email: "", password: "", showError: false, errMessage: "" };

@@ -6,6 +6,10 @@ let i = 0;
 const emptyQuestion = { id: 0, title:"", description:"", showError: false, errMessage: "" };
 
 class Questions extends Component {
+  componentDidMount() {
+    document.title = "Piazza - Questions";
+  }
+
   constructor(props) {
     super(props);
     this.state = { questions: [], question: emptyQuestion };
