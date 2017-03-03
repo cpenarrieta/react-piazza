@@ -27,9 +27,6 @@ class App extends Component {
       this.setState({ errMessage: "Empty password" });
     } else if (email === "admin@ubc.ca" && password === "123456") {
       browserHistory.push('/questions');
-      // setTimeout(() => {
-      //   browserHistory.push('/questions');
-      // }, 1000);
     } else {
       this.setState({ showError: true });
       this.setState({ errMessage: "Incorrect email/password" });
